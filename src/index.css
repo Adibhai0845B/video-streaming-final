@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-indigo {
+  @apply px-4 py-2 font-medium text-white transition duration-300 ease-in-out transform bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-700 hover:scale-105 hover:shadow-lg;
+}
+
+.btn-red {
+  @apply px-4 py-2 font-medium text-white transition duration-300 ease-in-out transform bg-red-600 rounded-md shadow-sm hover:bg-red-700 hover:scale-105 hover:shadow-lg;
+}
+
+.btn-premium {
+  @apply px-8 py-4 text-xl font-bold text-white transition duration-300 ease-in-out transform bg-indigo-600 rounded-lg shadow-lg hover:bg-indigo-700 hover:scale-110 hover:shadow-2xl;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
