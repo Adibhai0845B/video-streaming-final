@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import loginbackground from './loginbackground.jpg'; // Ensure the correct path to your image
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
@@ -41,8 +42,8 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
-      <div className="w-full max-w-md p-8 space-y-6 transition duration-500 transform bg-gray-800 rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r" style={{ backgroundImage: `url(${loginbackground})` }}>
+      <div className="w-full max-w-md p-8 space-y-6 transition duration-500 transform rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl bg-opacity-80">
         <h2 className="text-3xl font-extrabold text-center text-white animate-bounce">Login</h2>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="-space-y-px rounded-md shadow-sm">

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const getSongs = () => {
+const GetSongs = () => {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const getSongs = () => {
   );
 };
 
-export default getSongs;
+export default GetSongs;
